@@ -21,6 +21,10 @@ Route::get('/fornecedores', function () {
     return view('fornecedores');
 });
 
+Route::get('/fornecedores/cadastro', function () {
+    return view('fornecedores-cadastro');
+});
+
 Route::get('/clientes', function () {
     return view('clientes');
 });
