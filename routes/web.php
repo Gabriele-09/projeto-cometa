@@ -29,3 +29,7 @@ Route::get('/clientes', function () {
     return view('clientes');
 });
 
+Route::get('/clientes/cadastro', function () {
+    return view('clientes-cadastro');
+});
+

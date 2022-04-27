@@ -6,7 +6,7 @@
 @include('herancas.menu')
 
 <div style="padding-left:16px">
-  <h2>Cadastro de Fornecedores</h2>
+  <h2>Cadastro de clientes</h2>
 
   <form action="/action_page.php" style="max-width:500px;margin:auto">
   <h2>Register Form</h2>
