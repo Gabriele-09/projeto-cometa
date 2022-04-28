@@ -6,12 +6,12 @@
 @include('herancas.menu')
 
 <div style="padding-left:16px">
-<h2>Clientes</h2>
+<h2 class="titulo">Clientes</h2>
   
-  <a href="{{url('fornecedores/cadastro')}}"> <button class="btn default">Cadastrar Novo</button></a>
+  <a href="{{url('clientes/cadastro')}}"> <button class="btn default">Cadastrar Novo</button></a>
   <table>
   <tr>
-    <th style="width:50%">Features</th>
+    <th style="width:50%">Cliente</th>
     <th>Ativo</th>
     <th>Pro</th>
   </tr>

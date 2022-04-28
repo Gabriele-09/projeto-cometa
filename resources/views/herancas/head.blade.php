@@ -9,7 +9,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #04AA6D;
 }
 
 .topnav a {
@@ -22,13 +22,23 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
+}
+
+/* .cadastro{
+  border-radius: 5px;
+
+} */
+
+.titulo{
+  text-align: center;
+  padding: 14px;
 }
 
 table {
@@ -66,8 +76,15 @@ tr:nth-child(even) {
   cursor: pointer;
 }
 
-.default {background-color: #e7e7e7; color: black;}  
-.default:hover {background: #ddd;}
+.default {
+  background-color: #e7e7e7; 
+  color: black;
+}  
+
+.default:hover {
+  background: black; 
+  color: white;
+}
 
 .input-container {
   display: -ms-flexbox; 
@@ -79,7 +96,7 @@ tr:nth-child(even) {
 .icon {
   padding: 10px;
   background: #e7e7e7;
-  color: white;
+  color: #04AA6D;
   min-width: 50px;
   text-align: center;
 }
@@ -95,7 +112,7 @@ tr:nth-child(even) {
 }
 
 .btn {
-  background-color: #e7e7e7;
+  background-color: #04AA6D;
   color: white;
   padding: 15px 20px;
   border: none;

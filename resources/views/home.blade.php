@@ -7,7 +7,7 @@
 
 <div style="padding-left:16px">
   <h2>Home</h2>
-  <p>Some content..</p>
+  <p>Bem vindo ao Via Cep</p>
 </div>
 
 </body>
