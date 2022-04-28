@@ -1,35 +1,28 @@
 <?php
 
-
 namespace App\Repositories\Clientes;
-
-use Illuminate\Support\Facades\DB;
 
 trait ClientesRepository
 {
-    
-    public function index()
+
+    public static function index()
     {
-     
+        return self::all();
     }
 
-    public function store()
+    public static function store()
     {
-      
     }
 
-    public function show()
+    public static function show()
     {
-    
     }
 
-    public function update()
+    public static function atualiza()
     {
-   
     }
 
-    public function destroy()
+    public static function destroy($id)
     {
-    
     }
 }

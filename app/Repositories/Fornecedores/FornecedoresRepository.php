@@ -2,33 +2,27 @@
 
 namespace App\Repositories\Fornecedores;
 
-use Illuminate\Support\Facades\DB;
-
 trait FornecedoresRepository
 {
-    
-    public function index()
+
+    public static function index()
     {
-     
+        return self::all();
     }
 
-    public function store()
+    public static function store()
     {
-      
     }
 
-    public function show()
+    public static function show()
     {
-    
     }
 
-    public function update()
-    {
-   
-    }
+    // public static function update()
+    // {
+    // }
 
-    public function destroy()
+    public static function destroy($id)
     {
-    
     }
 }

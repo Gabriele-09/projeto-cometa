@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Clientes\ClientesController;
 use App\Http\Controllers\Fornecedores\FornecedoresController;
 use Illuminate\Support\Facades\Route;
 
@@ -55,4 +56,9 @@ Route::get(
 Route::get(
     '/clientes',
     [ClientesController::class, 'view']
+);
+
+Route::get(
+    '/clientes/cadastro',
+    [ClientesController::class, 'viewCadastro']
 );
