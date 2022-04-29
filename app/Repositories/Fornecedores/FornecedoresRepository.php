@@ -18,9 +18,9 @@ trait FornecedoresRepository
     {
     }
 
-    // public static function update()
-    // {
-    // }
+    public static function atualiza()
+    {
+    }
 
     public static function destroy($id)
     {

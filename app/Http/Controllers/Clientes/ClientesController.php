@@ -8,6 +8,10 @@ use Facade\FlareClient\Http\Client;
 
 class ClientesController extends Controller
 {
+    public function __construct(Request $request)
+    {
+        $this->request = $request;
+    }
 
     public function view()
     {
@@ -21,6 +25,21 @@ class ClientesController extends Controller
     public function viewCadastro()
     {
         return view('clientes-cadastro');
+    }
+
+    public function storeClientes()
+    {
+        
+        $this->request->validate(ClientesValidator::getCreateRules());
+        try {
+            $cliente = Clientes::create($this->request->all());
+        } catch (\Throwable $th) {
+            //throw $th;
+        }
+        
+        return view('clientes-cadastro',[
+            'cliente' => $cliente
+        ]);
     }
 
 }

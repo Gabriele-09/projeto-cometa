@@ -4,16 +4,20 @@ namespace App\Validators\Clientes;
 
 class ClientesValidator
 {
-    public function getCreateRules(): array
-    {
-        return [];
-    }
-
-    public function getUpdateRules($id): array
+    public static function getCreateRules(): array
     {
         return [
-            'nome' => 'required | max:80',
-            'cpf' => 'required',
+            'nome' => 'required | string| max:80',
+            'cpf' => 'required| string | max:15',
+            'telefone' => 'string | max:20'
+        ];
+    }
+
+    public static function getUpdateRules($id): array
+    {
+        return [
+            'nome' => 'string | max:80',
+            'cpf' => 'string | max:15',
             'telefone' => 'string | max:20'
 
         ];
