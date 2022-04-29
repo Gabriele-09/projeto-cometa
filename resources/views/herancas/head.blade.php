@@ -93,6 +93,17 @@ tr:nth-child(even) {
   margin-bottom: 15px;
 }
 
+.bemvindo{
+  text-align: center;
+  font-size: 30px;
+}
+
+.descricao{
+  padding: 5px;
+  text-align: center;
+  font-size: 25px;
+}
+
 .icon {
   padding: 10px;
   background: #e7e7e7;
