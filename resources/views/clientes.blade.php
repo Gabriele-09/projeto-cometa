@@ -12,9 +12,10 @@
   <table>
 
   <tr>
-    <th style="width:50%">Cliente</th>
-    <th>Ativo</th>
-    <th>Pro</th>
+    <th>Cliente</th>
+    <th>CPF</th>
+    <th>Telefone</th>
+    <th>CEP</th>
   </tr>
   @foreach ($clientes as $clientes)
               <tr>

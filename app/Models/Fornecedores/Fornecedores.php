@@ -10,7 +10,7 @@ class Fornecedores extends Model
 {
     use FornecedoresRepository;
 
-    protected $table = 'fornecedor';
+    protected $table = 'fornecedores';
     protected $primaryKey = 'cnpj';
 
     public $incrementing = false;

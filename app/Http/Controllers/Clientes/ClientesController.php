@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Clientes;
 
 use App\Http\Controllers\Controller;
 use App\Models\Clientes\Clientes;
-use Facade\FlareClient\Http\Client;
+use App\Validators\Clientes\ClientesValidator;
+use Exception;
+use Illuminate\Http\Request;
 
 class ClientesController extends Controller
 {
@@ -24,7 +26,10 @@ class ClientesController extends Controller
 
     public function viewCadastro()
     {
-        return view('clientes-cadastro');
+        return view('cep',[
+            'tipo' => 'cliente'
+        ]);
+        // return view('clientes-cadastro');
     }
 
     public function storeClientes()
@@ -34,12 +39,10 @@ class ClientesController extends Controller
         try {
             $cliente = Clientes::create($this->request->all());
         } catch (\Throwable $th) {
-            //throw $th;
+            throw new Exception($th->getMessage(), 422);
         }
         
-        return view('clientes-cadastro',[
-            'cliente' => $cliente
-        ]);
+        return view('home');
     }
 
 }

@@ -4,12 +4,12 @@ namespace App\Validators\Fornecedores;
 
 class FornecedoresValidator
 {
-    public function getCreateRules(): array
+    public static function getCreateRules(): array
     {
         return [];
     }
 
-    public function getUpdateRules($id): array
+    public static function getUpdateRules($id): array
     {
         return [
             'nome' => 'required | max:80',

@@ -8,7 +8,7 @@
 <div style="padding-left:16px">
 
   <form action="{{url('/clientes')}}" method='post' style="max-width:500px;margin:auto">
-  @crsf
+  @csrf
   <h2 class="titulo">Insira seus dados</h2>
   <div class="input-container">
     <i class="fa fa-user icon"></i>
@@ -24,6 +24,8 @@
     <i class="fa fa-key icon"></i>
     <input class="input-field" type="password" placeholder="CPF" name="cpf">
   </div>
+
+  <INPUT TYPE="hidden" NAME="endereco_id" VALUE="{{$endereco->cep}}">
 
   <button type="submit" class="btn">Salvar</button>
 </form>
